@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>若手営業交流会_提案ゲーム_発注者</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column-reverse;  /* Change the flex direction */
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+            }
+            #randomButton {
+                position: fixed; /* Make the button fixed at the bottom */
+                bottom: 20px; /* Set distance from bottom */
+                padding: 15px 25px;
+                font-size: 24px;
+                cursor: pointer;
+                outline: none;
+                color: #fff;
+                background-color: #ff4500;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+            }
+            #randomButton:hover {background-color: #3e8e41}
+            #randomButton:active {
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="imageContainer"></div>  <!-- Switch the order of imageContainer and randomButton -->
+        <button id="randomButton">発注者を決める</button>
+        <script src="script.js"></script>
+    </body>
+</html>
